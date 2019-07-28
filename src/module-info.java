@@ -4,5 +4,5 @@ module ColorPredictor {
     requires javafx.graphics;
     requires java.desktop;
 
-    opens com.wizzipop.colorpredictor;
+    opens com.wholebrain.colorpredictor;
 }
