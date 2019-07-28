@@ -1,0 +1,884 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="First commit with working code.">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/javafx_sdk_11_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ColorPredictor.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/colorpredictoricon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/colorpredictoricon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ColorPredictor/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ColorPredictor/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ColorPredictor/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ColorPredictor/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ColorPredictor/.idea/libraries/javafx_sdk_11_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ColorPredictor/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ColorPredictor/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ColorPredictor/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ColorPredictor/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ColorPredictor/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ColorPredictor/ColorPredictor.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ColorPredictor/colorpredictoricon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ColorPredictor/colorpredictoricon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ColorPredictor/com/wizzipop/colorpredictor/Controller$CustomProgress.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ColorPredictor/com/wizzipop/colorpredictor/Controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ColorPredictor/com/wizzipop/colorpredictor/FxObserver.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ColorPredictor/com/wizzipop/colorpredictor/IncorrectFileException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ColorPredictor/com/wizzipop/colorpredictor/InfoController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ColorPredictor/com/wizzipop/colorpredictor/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ColorPredictor/com/wizzipop/colorpredictor/Main.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ColorPredictor/com/wizzipop/colorpredictor/Model.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ColorPredictor/com/wizzipop/colorpredictor/NeuralNetwork/ColorNeuralNetwork$BWColor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ColorPredictor/com/wizzipop/colorpredictor/NeuralNetwork/ColorNeuralNetwork.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ColorPredictor/com/wizzipop/colorpredictor/NeuralNetwork/Matrix.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ColorPredictor/com/wizzipop/colorpredictor/NeuralNetwork/NeuralNetwork.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ColorPredictor/com/wizzipop/colorpredictor/NeuralNetwork/NonMatchingSizesException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ColorPredictor/com/wizzipop/colorpredictor/infoPanel.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ColorPredictor/config.nnc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ColorPredictor/module-info.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ColorPredictor/src/com/wizzipop/colorpredictor/Main.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ColorPredictor/src/com/wizzipop/colorpredictor/infoPanel.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/wholebrain/colorpredictor/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/wholebrain/colorpredictor/FxObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/wholebrain/colorpredictor/IncorrectFileException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/wholebrain/colorpredictor/InfoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/wholebrain/colorpredictor/Main.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/wholebrain/colorpredictor/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/wholebrain/colorpredictor/Model.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/wholebrain/colorpredictor/NeuralNetwork/ColorNeuralNetwork.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/wholebrain/colorpredictor/NeuralNetwork/Matrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/wholebrain/colorpredictor/NeuralNetwork/NeuralNetwork.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/wholebrain/colorpredictor/NeuralNetwork/NonMatchingSizesException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/wholebrain/colorpredictor/infoPanel.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/module-info.java" afterDir="false" />
+    </list>
+    <ignored path="JavaFxApplication.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DebuggerManager">
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true" converted="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <ui_properties converted="true" />
+    <breakpoint_rules converted="true" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="JavaFxApplication" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/wholebrain/colorpredictor/Controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3442">
+              <caret line="397" column="35" selection-start-line="397" selection-start-column="35" selection-end-line="397" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/wholebrain/colorpredictor/Main.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="94" column="12" selection-start-line="94" selection-start-column="12" selection-end-line="94" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/wholebrain/colorpredictor/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1224">
+              <caret line="85" selection-start-line="85" selection-end-line="85" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/wholebrain/colorpredictor/NeuralNetwork/NeuralNetwork.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="531">
+              <caret line="59" column="81" selection-start-line="59" selection-start-column="81" selection-end-line="59" selection-end-column="81" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#back#0;class#NeuralNetwork#0" />
+                <element signature="method#createLayer#0;class#NeuralNetwork#0" />
+                <element signature="method#createBiases#0;class#NeuralNetwork#0" />
+                <element signature="method#neuroneToString#0;class#NeuralNetwork#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/wholebrain/colorpredictor/InfoController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="32" column="85" selection-start-line="32" selection-start-column="85" selection-end-line="32" selection-end-column="85" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/wholebrain/colorpredictor/NeuralNetwork/Matrix.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="569">
+              <caret line="213" column="30" lean-forward="true" selection-start-line="213" selection-start-column="30" selection-end-line="213" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#8350#8351#0" expanded="true" />
+                <element signature="e#8395#8396#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/wholebrain/colorpredictor/IncorrectFileException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+              <folding>
+                <element signature="e#159#160#0" expanded="true" />
+                <element signature="e#241#242#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/wholebrain/colorpredictor/FxObserver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="module-info" />
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>fin</find>
+      <find>load</find>
+      <find>Incorr</find>
+      <find>currentFile == null</find>
+      <find>notify</find>
+      <find>see</find>
+      <find>Alert</find>
+    </findStrings>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Whole Brain" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/sample/Main.java" />
+        <option value="$PROJECT_DIR$/src/resources.fxml/Main.fxml" />
+        <option value="$PROJECT_DIR$/src/com/wizzipop/colorpredictor/NeuralNetwork/NonMatchingSizesException.java" />
+        <option value="$PROJECT_DIR$/src/com/wizzipop/colorpredictor/NeuralNetwork/BWOutput.java" />
+        <option value="$PROJECT_DIR$/src/com/wizzipop/colorpredictor/NeuralNetwork/SaveDisplay.fxml" />
+        <option value="$PROJECT_DIR$/src/com/wizzipop/colorpredictor/SaveDisplay.fxml" />
+        <option value="$PROJECT_DIR$/src/com/wizzipop/colorpredictor/FxObserver.java" />
+        <option value="$PROJECT_DIR$/src/com/wizzipop/colorpredictor/infoLaunchDisplay.fxml" />
+        <option value="$PROJECT_DIR$/src/com/wizzipop/colorpredictor/InfoPanel.java" />
+        <option value="$PROJECT_DIR$/src/module-info.java" />
+        <option value="$PROJECT_DIR$/src/com/wizzipop/colorpredictor/NeuralNetwork/ColorNeuralNetwork.java" />
+        <option value="$PROJECT_DIR$/src/com/wizzipop/colorpredictor/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/wizzipop/colorpredictor/Model.java" />
+        <option value="$PROJECT_DIR$/src/com/wizzipop/colorpredictor/Controller.java" />
+        <option value="$PROJECT_DIR$/src/com/wizzipop/colorpredictor/IncorrectFileException.java" />
+        <option value="$PROJECT_DIR$/src/com/wizzipop/colorpredictor/NeuralNetwork/NeuralNetwork.java" />
+        <option value="$PROJECT_DIR$/src/com/wizzipop/colorpredictor/InfoController.java" />
+        <option value="$PROJECT_DIR$/src/com/wizzipop/colorpredictor/Main.fxml" />
+        <option value="$PROJECT_DIR$/src/com/wizzipop/colorpredictor/NeuralNetwork/Matrix.java" />
+        <option value="$PROJECT_DIR$/src/com/wholebrain/colorpredictor/NeuralNetwork/Matrix.java" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ColorPredictor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ColorPredictor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ColorPredictor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ColorPredictor" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ColorPredictor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ColorPredictor" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ColorPredictor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ColorPredictor" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="colorpredictor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ColorPredictor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="OverrideImplement.combined" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="recentsLimit" value="5" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Programmation\Java\ColorPredictor\src\com\wizzipop\colorpredictor" />
+      <recent name="C:\Programmation\Java\ColorPredictor\src\com.wizzipop.colorpredictor" />
+      <recent name="C:\Programmation\Java\ColorPredictor\src\resources.fxml\" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.wizzipop.colorpredictor" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Programmation\Java\ColorPredictor\src\com\wizzipop\colorpredictor\NeuralNetwork" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wizzipop.colorpredictor.Main" />
+      <module name="ColorPredictor" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
+      <created>1359379246138</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1359379246138</updated>
+      <workItem from="1359379250712" duration="1302000" />
+    </task>
+    <task id="LOCAL-00001" summary="First commit with working code.">
+      <created>1564328573244</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1564328573244</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1302000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.1076759" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2990249" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
+      <window_info anchor="bottom" id="Application Servers" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32936078" />
+      <window_info anchor="bottom" id="Problems" order="9" />
+      <window_info anchor="bottom" id="Changes" order="10" />
+      <window_info anchor="bottom" id="Profiler" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" weight="0.32936078" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.2156013" />
+      <window_info anchor="bottom" id="Terminal" order="14" weight="0.32936078" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="JetGradle" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="right" id="Maven" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="8" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="right" id="Theme Preview" order="10" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <MESSAGE value="First commit with working code." />
+    <option name="LAST_COMMIT_MESSAGE" value="First commit with working code." />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/out/production/ColorPredictor/com/wizzipop/colorpredictor/Main.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/ColorPredictor/com/wizzipop/colorpredictor/sample.fxml" />
+    <entry file="file://$PROJECT_DIR$/src/com/wholebrain/colorpredictor/NeuralNetwork/NonMatchingSizesException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wizzipop/colorpredictor/NeuralNetwork/BWOutput.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/wizzipop/colorpredictor/NeuralNetwork/SaveDisplay.fxml" />
+    <entry file="jar://$PROJECT_DIR$/../libraries/javafx-sdk-11.0.2/lib/src.zip!/javafx.fxml/javafx/fxml/FXMLLoader.java" />
+    <entry file="jar://$PROJECT_DIR$/../libraries/javafx-sdk-11.0.2/lib/src.zip!/javafx.controls/javafx/scene/control/TextField.java" />
+    <entry file="jar://$PROJECT_DIR$/../libraries/javafx-sdk-11.0.2/lib/src.zip!/javafx.controls/javafx/scene/control/CheckBox.java" />
+    <entry file="jar://$PROJECT_DIR$/../libraries/javafx-sdk-11.0.2/lib/src.zip!/javafx.base/javafx/beans/value/ObservableValue.java" />
+    <entry file="file://$PROJECT_DIR$/ColorPredictor.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../libraries/javafx-sdk-11.0.2/lib/src.zip!/javafx.base/javafx/beans/property/StringProperty.java" />
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2329">
+          <caret line="273" column="11" selection-start-line="273" selection-start-column="11" selection-end-line="273" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../libraries/javafx-sdk-11.0.2/lib/src.zip!/javafx.base/javafx/collections/ObservableList.java" />
+    <entry file="jar://$PROJECT_DIR$/../libraries/javafx-sdk-11.0.2/lib/src.zip!/javafx.base/javafx/beans/property/IntegerPropertyBase.java" />
+    <entry file="jar://$PROJECT_DIR$/../libraries/javafx-sdk-11.0.2/lib/src.zip!/javafx.graphics/javafx/scene/Scene.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/wizzipop/colorpredictor/InfoPanel.java" />
+    <entry file="file://$PROJECT_DIR$/src/module-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../libraries/javafx-sdk-11.0.2/lib/src.zip!/javafx.graphics/javafx/scene/layout/Pane.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/wizzipop/colorpredictor/SaveDisplay.fxml" />
+    <entry file="file://$PROJECT_DIR$/src/com/wholebrain/colorpredictor/NeuralNetwork/ColorNeuralNetwork.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="72" selection-start-line="7" selection-start-column="72" selection-end-line="7" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#guess#0;class#ColorNeuralNetwork#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/io/IOException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="38" column="6" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wholebrain/colorpredictor/infoPanel.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wholebrain/colorpredictor/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="334" column="10" selection-start-line="334" selection-start-column="10" selection-end-line="334" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#Model#0" />
+            <element signature="e#1312#1434#0" />
+            <element signature="e#1471#1655#0" />
+            <element signature="e#1692#1870#0" />
+            <element signature="e#2606#2734#1" />
+            <element signature="e#2738#2828#1" />
+            <element signature="e#2899#2943#0" />
+            <element signature="e#2977#3055#0" />
+            <element signature="e#3063#3275#0" />
+            <element signature="e#3094#3265#1" />
+            <element signature="e#3116#3168#0" />
+            <element signature="e#3191#3251#0" />
+            <element signature="e#3287#3383#0" />
+            <element signature="e#3287#3560#0" />
+            <element signature="e#3410#3532#0" />
+            <element signature="e#3566#3956#0" />
+            <element signature="e#3566#4123#0" />
+            <element signature="e#4129#4384#0" />
+            <element signature="e#4427#4471#0" />
+            <element signature="e#4477#4599#0" />
+            <element signature="e#4477#4790#0" />
+            <element signature="e#4796#5006#0" />
+            <element signature="e#4796#5097#0" />
+            <element signature="e#5103#5284#0" />
+            <element signature="e#5312#5351#0" />
+            <element signature="e#5357#5454#0" />
+            <element signature="e#5357#6261#0" />
+            <element signature="e#5536#5971#0" />
+            <element signature="e#5994#6038#0" />
+            <element signature="e#6046#6255#0" />
+            <element signature="e#6074#6245#1" />
+            <element signature="e#6096#6148#0" />
+            <element signature="e#6171#6231#0" />
+            <element signature="e#6267#6742#0" />
+            <element signature="e#6267#6895#0" />
+            <element signature="e#6901#7192#0" />
+            <element signature="e#7246#7247#0" expanded="true" />
+            <element signature="e#7288#7289#0" expanded="true" />
+            <element signature="e#7295#7432#0" />
+            <element signature="e#7295#7575#0" />
+            <element signature="e#7581#7751#0" />
+            <element signature="e#7581#7921#0" />
+            <element signature="e#7927#8100#0" />
+            <element signature="e#8139#8173#0" />
+            <element signature="e#8179#8342#0" />
+            <element signature="e#8179#8449#0" />
+            <element signature="e#8455#8871#0" />
+            <element signature="e#8455#8976#0" />
+            <element signature="e#8982#9221#0" />
+            <element signature="e#9256#9289#0" />
+            <element signature="e#9295#9581#0" />
+            <element signature="e#9623#9663#0" />
+            <element signature="e#9669#9949#0" />
+            <element signature="e#9997#10037#0" />
+            <element signature="e#10043#10241#0" />
+            <element signature="e#10286#10323#0" />
+            <element signature="e#10329#10507#0" />
+            <element signature="e#10552#10589#0" />
+            <element signature="e#10595#10714#0" />
+            <element signature="e#10744#10784#0" />
+            <element signature="e#10790#10914#0" />
+            <element signature="e#10941#10978#0" />
+            <element signature="e#10984#11143#0" />
+            <element signature="e#11179#11214#0" />
+            <element signature="e#11220#11312#0" />
+            <element signature="e#11338#11373#0" />
+            <element signature="e#11379#11665#0" />
+            <element signature="e#11899#12235#1" />
+            <element signature="e#12041#12178#1" />
+            <element signature="e#12383#12498#0" />
+            <element signature="e#12555#12649#1" />
+            <element signature="e#13691#13900#0" />
+            <element signature="e#13719#13890#1" />
+            <element signature="e#13741#13793#0" />
+            <element signature="e#13816#13876#0" />
+            <element signature="e#13914#14138#0" />
+            <element signature="e#14912#15046#0" />
+            <element signature="e#14912#15732#0" />
+            <element signature="e#15130#15315#0" />
+            <element signature="e#15338#15382#0" />
+            <element signature="e#15390#15601#0" />
+            <element signature="e#15420#15591#1" />
+            <element signature="e#15442#15494#0" />
+            <element signature="e#15517#15577#0" />
+            <element signature="e#15738#15958#0" />
+            <element signature="e#15738#16857#0" />
+            <element signature="e#16863#16964#0" />
+            <element signature="e#16984#17022#0" />
+            <element signature="e#17028#17146#0" />
+            <element signature="e#17178#17211#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wholebrain/colorpredictor/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wholebrain/colorpredictor/FxObserver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wholebrain/colorpredictor/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3442">
+          <caret line="397" column="35" selection-start-line="397" selection-start-column="35" selection-end-line="397" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wholebrain/colorpredictor/IncorrectFileException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+          <folding>
+            <element signature="e#159#160#0" expanded="true" />
+            <element signature="e#241#242#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wholebrain/colorpredictor/NeuralNetwork/NeuralNetwork.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="59" column="81" selection-start-line="59" selection-start-column="81" selection-end-line="59" selection-end-column="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#back#0;class#NeuralNetwork#0" />
+            <element signature="method#createLayer#0;class#NeuralNetwork#0" />
+            <element signature="method#createBiases#0;class#NeuralNetwork#0" />
+            <element signature="method#neuroneToString#0;class#NeuralNetwork#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wholebrain/colorpredictor/Main.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="94" column="12" selection-start-line="94" selection-start-column="12" selection-end-line="94" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wholebrain/colorpredictor/InfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="32" column="85" selection-start-line="32" selection-start-column="85" selection-end-line="32" selection-end-column="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wholebrain/colorpredictor/NeuralNetwork/Matrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="569">
+          <caret line="213" column="30" lean-forward="true" selection-start-line="213" selection-start-column="30" selection-end-line="213" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#8350#8351#0" expanded="true" />
+            <element signature="e#8395#8396#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>JavaFXApp</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>javafx-swt</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>ColorPredictor</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>javafx-sdk-11.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1"
+      fx:controller="com.wizzipop.colorpredictor.Controller">
+    <MenuBar>
+        <Menu mnemonicParsing="false" text="File">
+            <MenuItem fx:id="new_menu" mnemonicParsing="false" onAction="#on_new" text="New"/>
+            <SeparatorMenuItem mnemonicParsing="false"/>
+            <MenuItem mnemonicParsing="false" onAction="#on_save" text="Save">
+                <accelerator>
+                    <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
+                </accelerator>
+            </MenuItem>
+            <MenuItem fx:id="save_menu" mnemonicParsing="false" onAction="#on_save_as" text="Save as...">
+                <accelerator>
+                    <KeyCodeCombination alt="DOWN" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
+                </accelerator>
+            </MenuItem>
+            <MenuItem fx:id="load_menu" mnemonicParsing="false" onAction="#on_load" text="Load"/>
+            <Menu fx:id="recent_menu" mnemonicParsing="false" text="Recent">
+                <accelerator>
+                    <KeyCodeCombination alt="UP" code="L" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
+                </accelerator>
+            </Menu>
+            <SeparatorMenuItem mnemonicParsing="false"/>
+            <MenuItem mnemonicParsing="false" onAction="#on_close" text="Quit">
+                <accelerator>
+                    <KeyCodeCombination alt="UP" code="Q" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
+                </accelerator>
+            </MenuItem>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+            <MenuItem mnemonicParsing="false" onAction="#on_about" text="About"/>
+        </Menu>
+    </MenuBar>
+    <AnchorPane prefHeight="442.0" prefWidth="800.0">
+        <Pane fx:id="color_pane" onMouseClicked="#on_colorpane_clicked" onMouseExited="#on_colorpane_exit"
+              onMouseMoved="#on_colorpane_over" prefHeight="400.0" prefWidth="800.0"
+              style="-fx-background-color: #00FF00;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+              AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <Label layoutX="137.0" layoutY="174.0" text="BLACK">
+                <font>
+                    <Font size="50.0"/>
+                </font>
+            </Label>
+            <Label layoutX="474.0" layoutY="174.0" text="WHITE" textFill="WHITE">
+                <font>
+                    <Font size="50.0"/>
+                </font>
+            </Label>
+            <Circle fx:id="black_circle" fill="TRANSPARENT" layoutX="209.0" layoutY="211.0" radius="100.0"
+                    stroke="BLACK" strokeType="INSIDE" visible="false"/>
+            <Circle fx:id="white_circle" fill="#1f93ff00" layoutX="547.0" layoutY="211.0" radius="100.0"
+                    stroke="WHITE" strokeType="INSIDE" visible="false"/>
+        </Pane>
+    </AnchorPane>
+    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+        <Button fx:id="learn_button" disable="true" layoutX="265.0" layoutY="51.0" mnemonicParsing="false"
+                onAction="#on_toggle_mode" text="Learn" textAlignment="CENTER">
+            <font>
+                <Font size="36.0"/>
+            </font>
+        </Button>
+        <Button fx:id="predict_button" layoutX="400.0" layoutY="51.0" mnemonicParsing="false" onAction="#on_toggle_mode"
+                text="Predict">
+            <font>
+                <Font size="36.0"/>
+            </font>
+        </Button>
+        <Label fx:id="certainty_label" layoutX="265.0" layoutY="14.0" text="Certainty = " visible="false">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </Label>
+        <CheckBox fx:id="autotrain_checkbox" layoutX="54.0" layoutY="21.0" mnemonicParsing="false"
+                  onAction="#on_toggle_autotrain" text="AutoTrain"/>
+        <AnchorPane fx:id="autotrain_pane" layoutX="14.0" layoutY="47.0" prefHeight="124.0" prefWidth="200.0">
+            <Label layoutX="12.0" layoutY="18.0" text="Black if r+g+b "/>
+            <ComboBox fx:id="infsup_combobox" layoutX="91.0" layoutY="14.0" onAction="#on_operator_chosen"
+                      prefHeight="25.0" prefWidth="62.0" promptText="&gt;="/>
+            <TextField fx:id="rgbthreshold_textfield" layoutX="150.0" layoutY="14.0" prefHeight="25.0"
+                       prefWidth="50.0" text="384"/>
+            <Label layoutX="14.0" layoutY="56.0" text="Train"/>
+            <TextField fx:id="trainingtimes_textfield" layoutX="54.0" layoutY="52.0" prefHeight="25.0"
+                       prefWidth="73.0" text="100"/>
+            <Label layoutX="136.0" layoutY="56.0" text="times"/>
+            <Button fx:id="autotrain_button" layoutX="37.0" layoutY="93.0" mnemonicParsing="false"
+                    onAction="#on_autotrain_launch" text="Launch AutoTraining"/>
+        </AnchorPane>
+        <Label fx:id="training_label" layoutX="318.0" layoutY="148.0" text="Training..." visible="false"/>
+    </AnchorPane>
+</VBox>
