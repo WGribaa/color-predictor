@@ -19,9 +19,9 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class InfoController implements Initializable {
-    public VBox info_vbox;
-    public Label welcome_label;
-    public BorderPane info_pane;
+    @FXML public VBox info_vbox;
+    @FXML public Label welcome_label;
+    @FXML public BorderPane info_pane;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {

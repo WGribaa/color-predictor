@@ -5,7 +5,17 @@ import javafx.application.Platform;
 import javafx.event.EventType;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.*;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
+import javafx.scene.control.CheckBox;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.Dialog;
+import javafx.scene.control.Label;
+import javafx.scene.control.Menu;
+import javafx.scene.control.MenuItem;
+import javafx.scene.control.TextField;
+import javafx.scene.control.TextFormatter;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
@@ -26,16 +36,16 @@ import java.util.ResourceBundle;
 
 
 public class Controller implements Initializable, FxObserver {
-    public AnchorPane autotrain_pane;
-    public Pane color_pane;
-    public Circle black_circle, white_circle;
-    public Label training_label, certainty_label;
-    public Button learn_button, predict_button, autotrain_button;
-    public CheckBox autotrain_checkbox;
-    public ComboBox<String> infsup_combobox;
-    public TextField rgbthreshold_textfield, trainingtimes_textfield;
-    public MenuItem save_menu, load_menu, new_menu;
-    public Menu recent_menu;
+    @FXML public AnchorPane autotrain_pane;
+    @FXML public Pane color_pane;
+    @FXML public Circle black_circle, white_circle;
+    @FXML public Label training_label, certainty_label;
+    @FXML public Button learn_button, predict_button, autotrain_button;
+    @FXML public CheckBox autotrain_checkbox;
+    @FXML public ComboBox<String> infsup_combobox;
+    @FXML public TextField rgbthreshold_textfield, trainingtimes_textfield;
+    @FXML public MenuItem save_menu, load_menu, new_menu;
+    @FXML public Menu recent_menu;
 
     private Model model;
 
@@ -95,7 +105,7 @@ public class Controller implements Initializable, FxObserver {
     }
 
     /**
-     * Both the circles are hided.
+     * Both the circles are hidden.
      */
     @FXML
     public void on_colorpane_exit() {
@@ -382,8 +392,7 @@ public class Controller implements Initializable, FxObserver {
     }
 
     /**
-     * Strores a link to the {@link Stage primary stage} to be able to close it
-     * or to display modal {@link Dialog dialogs} over it.
+     * Strores a link to the {@link Stage primary stage} to be able to close it.
      * @param primaryStage Main {@link Stage window}.
      */
     void setStage(Stage primaryStage) {
